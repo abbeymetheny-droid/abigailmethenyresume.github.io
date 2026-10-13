@@ -1,4 +1,12 @@
-/* Adjust the size of your resume photo */ div#resume img { width: 100px; height: auto; object-fit: cover; display: block; margin-bottom: 20px; }
+/* Force the resume photo to a reasonable size */
+#resume img {
+  width: 100px !important;
+  max-width: 100px;
+  height: auto !important;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 20px;
+}
 @media screen and (max-width: 550px) {
   div#resume h2 span {
     position: static;
@@ -57,7 +65,7 @@
     margin: 0;
   }
   img {
-    margin: 100;
+    margin: 0;
     margin-bottom: 20px;
   }
   div#resume {
